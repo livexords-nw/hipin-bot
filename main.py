@@ -611,7 +611,7 @@ async def main():
     num_workers = config.get("thread", 1)  # Number of concurrent workers (threads)
 
     hip.log(
-        "🎉 [LIVEXORDS] === Welcome to hipMoon Automation === [LIVEXORDS]",
+        "🎉 [LIVEXORDS] === Welcome to Hipin Automation === [LIVEXORDS]",
         Fore.YELLOW,
     )
     hip.log(f"📂 Loaded {len(all_accounts)} accounts from query list.", Fore.YELLOW)

@@ -1,41 +1,77 @@
+
 ---
 
 <h1 align="center">Hipin Bot</h1>
 
-<p align="center">Automate tasks in Hipin to enhance your efficiency and maximize your results!</p>
+<p align="center">
+<strong>Boost your productivity with Hipin Bot – your friendly automation tool that handles key tasks with ease!</strong>
+</p>
+
+<p align="center">
+<a href="https://github.com/livexords-nw/hipin-bot/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/livexords-nw/hipin-bot/ci.yml?branch=main" alt="Build Status" />
+</a>
+<a href="https://github.com/livexords-nw/hipin-bot/releases">
+<img src="https://img.shields.io/github/v/release/livexords-nw/hipin-bot" alt="Latest Release" />
+</a>
+<a href="https://github.com/livexords-nw/hipin-bot/blob/main/LICENSE">
+<img src="https://img.shields.io/github/license/livexords-nw/hipin-bot" alt="License" />
+</a>
+<a href="https://t.me/livexordsscript">
+<img src="https://img.shields.io/badge/Telegram-Join%20Group-2CA5E0?logo=telegram&style=flat" alt="Telegram Group" />
+</a>
+</p>
 
 ---
 
-## 🚀 About Hipin Bot
+## 🚀 About the Bot
 
-Hipin Bot is a smart automation tool designed to simplify your gaming experience. With Hipin Bot, you can easily:
+Hipin Bot is your automation buddy designed to simplify daily operations. This bot takes over repetitive tasks so you can focus on what really matters. With Hipin Bot, you get:
 
-- **Auto Daily Check-in:** Automatically claim your daily rewards.
-- **Auto Task Execution:** Run available tasks and collect rewards without manual effort.
-- **Auto Farming:** Manage your farming sessions and claim rewards seamlessly.
-- **Auto Level Up:** Automatically upgrade your model when level-up requirements are met.
+- **Daily Reward Check & Claim 🎁:**  
+  Automatically check and claim your daily rewards.
+- **Automatically Solving Tasks 🤖:**  
+  Handle routine tasks automatically, reducing manual intervention.
+- **Automatic Farming for Abundant Harvest 🌾:**  
+  Collect resources through automated farming processes.
+- **Automatic Level Up System 📈:**
+  The bot automatically checks your level-up requirements and upgrades your model when the criteria are met, ensuring continuous progress without manual effort.
+- **Multi Account Support 👥:**  
+  Manage multiple accounts effortlessly with built-in multi account support.
+- **Thread System 🧵:**  
+  Run tasks concurrently with configurable threading options to improve overall performance and speed.
+- **Configurable Delays ⏱️:**  
+  Fine-tune delays between account switches and loop iterations to match your specific workflow needs.
+- **Support Proxy 🔌:**  
+  Use HTTP/HTTPS proxies to enhance your multi-account setups.
 
-Additional benefits include:
-
-- **Multi-Account Support:** Handle multiple accounts at once.
-- **Threading System:** Process accounts concurrently with configurable threading.
-- **Proxy Support:** Optionally use proxies for added security.
-- **Customizable Delays:** Fine-tune delays for switching accounts and loop iterations.
+Hipin Bot is built with flexibility and efficiency in mind – it's here to help you automate your operations and boost your productivity!
 
 ---
 
-## 🌟 Version v1.0.1
+## 🌟 Version Updates
 
-### Updates
+**Current Version: v1.0.1**
+
+### v1.0.1 - Latest Update
 
 1. **Added Auto Level Up System:**  
    The bot now automatically checks your level-up requirements and upgrades your model when the criteria are met.
 
 ---
 
-## ⚙️ Configuration in `config.json`
+## 📝 Register
 
-Below is an example configuration file. Adjust the settings as needed:
+Before you start using Hipin Bot, make sure to register your account.  
+Click the link below to get started:
+
+[🔗 Register for Hipin Bot](https://t.me/hi_PIN_bot/app?startapp=pAuthDl)
+
+---
+
+## ⚙️ Configuration
+
+### Main Bot Configuration (`config.json`)
 
 ```json
 {
@@ -49,67 +85,73 @@ Below is an example configuration file. Adjust the settings as needed:
 }
 ```
 
-| **Function**           | **Description**                                    | **Default** |
-| ---------------------- | -------------------------------------------------- | ----------- |
-| `farming`              | Automate farming sessions and reward claims        | `true`      |
-| `task`                 | Automate task execution and reward claims          | `true`      |
-| `daily`                | Automate daily check-in and claim rewards          | `true`      |
-| `thread`               | Number of concurrent threads (accounts) to process | `1`         |
-| `proxy`                | Enable/Disable proxy usage                         | `false`     |
-| `delay_account_switch` | Delay before switching accounts (in seconds)       | `10`        |
-| `delay_loop`           | Delay before restarting the bot loop (in seconds)  | `3000`      |
+| **Setting**            | **Description**                                    | **Default Value** |
+| ---------------------- | -------------------------------------------------- | ----------------- |
+| `farming`              | Automate farming sessions and reward claims        | `true`            |
+| `task`                 | Automate task execution and reward claims          | `true`            |
+| `daily`                | Automate daily check-in and claim rewards          | `true`            |
+| `thread`               | Number of concurrent threads (accounts) to process | `1`               |
+| `proxy`                | Enable/Disable proxy usage                         | `false`           |
+| `delay_account_switch` | Delay before switching accounts (in seconds)       | `10`              |
+| `delay_loop`           | Delay before restarting the bot loop (in seconds)  | `3000`            |
 
 ---
 
-## 📥 How to Register
+## 📅 Requirements
 
-Get started with Hipin Bot by registering through the link below:
+- **Minimum Python Version:** `Python 3.9+`
+- **Required Libraries:**
+  - colorama
+  - requests
+  - fake-useragent
+  - brotli
+  - chardet
+  - urllib3
 
-<div align="center">
-  <a href="https://t.me/hi_PIN_bot/app?startapp=pAuthDl" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Register&logo=telegram&label=&color=2CA5E0&logoColor=white&style=for-the-badge" height="25" alt="telegram logo" />
-  </a>
-</div>
+These are installed automatically when running:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 📖 Installation Steps
+## 📅 Installation Steps
 
-1. **Clone the Repository**  
-   Clone the project to your local machine:
+### Main Bot Installation
+
+1. **Clone the Repository**
 
    ```bash
    git clone https://github.com/livexords-nw/hipin-bot.git
    ```
 
-2. **Navigate to the Project Folder**  
-   Change your directory to the project folder:
+2. **Navigate to the Project Folder**
 
    ```bash
    cd hipin-bot
    ```
 
-3. **Install Dependencies**  
-   Install the required libraries:
+3. **Install Dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Configure Query**  
-   Create a `query.txt` file and add your game query data.
+4. **Configure Your Query**
+
+   Create a file named `query.txt` and add your query data.
 
 5. **Set Up Proxy (Optional)**  
-   If you want to use a proxy, create a `proxy.txt` file and list your proxies in the following format:
+   To use a proxy, create a `proxy.txt` file and add proxies in the format:
 
    ```
    http://username:password@ip:port
    ```
 
-   (Only HTTP and HTTPS proxies are supported.)
+   _Only HTTP and HTTPS proxies are supported._
 
-6. **Run the Bot**  
-   Execute the bot using the command:
+6. **Run Bot**
 
    ```bash
    python main.py
@@ -117,32 +159,70 @@ Get started with Hipin Bot by registering through the link below:
 
 ---
 
-## 🚀 Main Features
+### 🔹 Want Free Proxies?
 
-- **Auto Daily Check-in:** Claim your daily rewards automatically.
-- **Auto Task Execution:** Run tasks and claim rewards without any manual effort.
-- **Auto Farming:** Manage your farming sessions and collect rewards seamlessly.
-- **Auto Level Up:** Upgrade your model automatically when requirements are met.
-- **Multi-Account Support:** Process multiple accounts concurrently.
-- **Threading System:** Use configurable threading to run accounts in parallel.
-- **Proxy Support:** Optionally enhance security with proxy usage.
-- **Custom Delays:** Adjust delay intervals for account switching and bot looping.
+You can obtain free proxies from [Webshare.io](https://www.webshare.io/).
 
 ---
 
-### 🔹 Want Free Proxies? You can obtain free proxies from [Webshare.io](https://www.webshare.io/).
+### 📂 Project Structure
+
+```
+hipin-bot/
+├── .github/
+│   └── workflows/
+│       └── ci.yml              # GitHub Actions CI workflow for automated checks/deploys
+├── config.json                 # Main configuration file for the bot
+├── query.txt                   # Contains query data to be processed
+├── proxy.txt                   # (Optional) Proxy list (HTTP/HTTPS) to use for multi-account support
+├── main.py                     # Main Python script (entry point of the bot)
+├── requirements.txt            # Python dependencies required to run the bot
+├── LICENSE                     # License for the project
+└── README.md                   # Documentation and feature list 
+```
 
 ---
 
-## 🛠 Contributing
+## 🛠️ Contributing
 
-This project is developed by **livexords**.  
-If you have any suggestions, questions, or would like to contribute, please get in touch:
+This project is developed by **Livexords**.  
+If you have ideas, questions, or want to contribute, please join our Telegram group for discussions and updates.  
+For contribution guidelines, please consider:
+
+- **Code Style:** Follow standard Python coding conventions.
+- **Pull Requests:** Test your changes before submitting a PR.
+- **Feature Requests & Bugs:** Report and discuss via our Telegram group.
 
 <div align="center">
   <a href="https://t.me/livexordsscript" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Livexords&logo=telegram&label=&color=2CA5E0&logoColor=white&style=for-the-badge" height="25" alt="telegram logo" />
+    <img src="https://img.shields.io/badge/Join-Telegram%20Group-2CA5E0?logo=telegram&style=for-the-badge" height="25" alt="Telegram Group" />
   </a>
 </div>
+
+---
+
+## 📖 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## 🔍 Usage Example
+
+After installation and configuration, simply run:
+
+```bash
+python main.py
+```
+
+You should see output indicating the bot has started its operations. For further instructions or troubleshooting, please check our Telegram group or open an issue in the repository.
+
+---
+
+## 📣 Community & Support
+
+For support, updates, and feature requests, join our Telegram group.  
+This is the central hub for all discussions related to Hipin Bot, including roadmap ideas and bug fixes.
 
 ---
